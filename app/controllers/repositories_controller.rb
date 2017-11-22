@@ -1,6 +1,6 @@
 class RepositoriesController < ApplicationController
   def index
-    GithubService.new(session).get_repos
+    @repos = GithubService.new(session).get_repos
   end
 
   def create

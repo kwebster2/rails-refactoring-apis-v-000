@@ -5,7 +5,6 @@ class GithubRepo
   def initialize(hash)
     @name = hash["name"]
     @url = hash["html_url"]
-    @@all << self
   end
 
 end
